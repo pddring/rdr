@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/reader_logo"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="@string/welcome"
+        tools:context=".Home" />
+
+    <ImageButton
+        android:id="@+id/ibtnScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:contentDescription="@string/scan_image"
+        android:onClick="scanImage"
+        android:src="@drawable/ic_scan" />
+
+    <TextView
+        android:id="@+id/txtScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ibtnScan"
+        android:layout_toRightOf="@+id/ibtnScan"
+        android:text="@string/scan_image"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/image_preview"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ibtnScan"
+        android:contentDescription="@string/image_preview"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/ibtnLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ibtnScan"
+        android:contentDescription="@string/load_image"
+        android:src="@drawable/ic_load" />
+
+    <TextView
+        android:id="@+id/txtLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ibtnLoad"
+        android:layout_alignLeft="@+id/txtScan"
+        android:text="@string/load_image"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
